@@ -1,4 +1,3 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +11,9 @@ class BankServiceTest {
 
     @BeforeAll
     static void setUpAll() {
-        WebDriverManager.chromedriver().setup();
+        // WebDriverManager.chromedriver().setup();
+        System.setProperty("webdriver.chrome.driver", "driver/linux/chromedriver");
+
     }
 
     @Test
