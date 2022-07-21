@@ -12,7 +12,7 @@ class BankServiceTest {
 
     @BeforeAll
     static void setUpAll() {
-        WebDriverManager.chromedriver().create();
+        WebDriverManager.chromedriver().setup();
     }
 
     @Test
