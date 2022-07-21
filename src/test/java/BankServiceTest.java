@@ -6,14 +6,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 
-public class BankServiceTest {
+class BankServiceTest {
 
     private WebDriver driver;
 
     @BeforeAll
     static void setUpAll() {
         WebDriverManager.chromedriver().setup();
-        // System.setProperty("webdriver.chrome.driver", "driver/win/chromedriver.exe");
     }
 
     @Test
